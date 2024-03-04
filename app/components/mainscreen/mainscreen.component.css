@@ -1,0 +1,9 @@
+.mainscreen{
+    margin-top: 0px;
+    padding: 0px;
+    min-height: 80vh;
+    
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 30px;
+}

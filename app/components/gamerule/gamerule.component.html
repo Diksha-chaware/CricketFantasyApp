@@ -1,0 +1,274 @@
+<mat-toolbar color="accent">
+    <a routerLink="/" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>sports_cricket</mat-icon>
+    </a>
+    <span>How To Play</span>
+    <span class="example-spacer"></span>
+    
+  </mat-toolbar>
+
+<br>
+<br>
+
+<mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1><strong>Creating Your Team</strong></h1>
+        </mat-panel-title>
+        <mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the primary content of the panel.</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        
+        <mat-panel-description>
+          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p><ol>
+        <li>Every cricket team you build on Dream11 must have <strong>11 players</strong> </li>
+        <li>A maximum of <strong>10 players</strong> can be selected from any one of the teams</li>
+    </ol>
+    <br>
+    <br>
+    
+    <mat-card>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    
+    
+    
+        <ng-container matColumnDef="playertype">
+            <th mat-header-cell *matHeaderCellDef> <b>Player Type</b> </th>
+            <td mat-cell *matCellDef="let element"> {{element.playertype}} </td>
+        </ng-container>
+    
+    
+        <ng-container matColumnDef="min">
+            <th mat-header-cell *matHeaderCellDef> <b>Min</b> </th>
+            <td mat-cell *matCellDef="let element"> {{element.min}} </td>
+        </ng-container>
+    
+        <ng-container matColumnDef="max">
+            <th mat-header-cell *matHeaderCellDef> <b>Max</b></th>
+            <td mat-cell *matCellDef="let element"> {{element.max}} </td>
+        </ng-container>
+    
+    
+    
+    has context menu
+    
+    
+    
+    
+    
+    
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    </mat-card>
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <!-- </mat-expansion-panel>
+  </mat-accordion>
+<mat-card>
+    <mat-panel-title>
+        <h1><strong>Creating Your Team</strong></h1>
+      </mat-panel-title> -->
+
+
+
+
+  
+<!-- <ol>
+    <li>Every cricket team you build on Dream11 must have <strong>11 players</strong> </li>
+    <li>A maximum of <strong>10 players</strong> can be selected from any one of the teams</li>
+</ol>
+<br>
+<br>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+
+    <ng-container matColumnDef="playertype">
+        <th mat-header-cell *matHeaderCellDef> <b>Player Type</b> </th>
+        <td mat-cell *matCellDef="let element"> {{element.playertype}} </td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="min">
+        <th mat-header-cell *matHeaderCellDef> <b>Min</b> </th>
+        <td mat-cell *matCellDef="let element"> {{element.min}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="max">
+        <th mat-header-cell *matHeaderCellDef> <b>Max</b></th>
+        <td mat-cell *matCellDef="let element"> {{element.max}} </td>
+    </ng-container>
+
+
+
+has context menu
+
+
+
+
+
+
+<tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+<tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+</mat-card>
+
+
+
+
+
+   -->
+
+   <br>
+   <br>
+
+   
+   <mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1><strong>Batting Points</strong></h1>
+        </mat-panel-title>
+        <mat-panel-description>
+          This is a summary of the content
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>This is the primary content of the panel.</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true"
+                         (closed)="panelOpenState = false">
+      <mat-expansion-panel-header>
+        
+        <mat-panel-description>
+          Currently I am {{panelOpenState ? 'open' : 'closed'}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p><ol>
+        <li>Any player scoring a century will only get points for the century. No points will be awarded as their 30 run Bonus or Half-century Bonus. Additionally, no points are awarded for centuries in T10 matches. </li>
+        <li>If any runs are scored on an overthrow, points for those runs will be credited to the batter on strike for that ball. However, if the overthrow goes for a boundary, the batter will not receive extra Boundary Bonus points.</li>
+    </ol>
+    <br>
+    <br>
+
+    
+
+    <mat-card>
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    
+    
+    
+        <ng-container matColumnDef="pointname">
+            <th mat-header-cell *matHeaderCellDef> <b>Points Name</b> </th>
+            <td mat-cell *matCellDef="let element"> {{element.pointname}} </td>
+        </ng-container>
+    
+    
+        <ng-container matColumnDef="points">
+            <th mat-header-cell *matHeaderCellDef> <b>Points</b> </th>
+            <td mat-cell *matCellDef="let element"> {{element.points}} </td>
+        </ng-container>
+    
+       
+    
+    
+    
+    has context menu
+    
+    
+    
+    
+    
+    
+    <tr mat-header-row *matHeaderRowDef="displayedColumns1"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns1;"></tr>
+    </table>
+    </mat-card>
+<br>
+<br>
+
+
+
+    <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h1><strong>Bawling Points</strong></h1>
+            </mat-panel-title>
+            <mat-panel-description>
+              This is a summary of the content
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>This is the primary content of the panel.</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false">
+          <mat-expansion-panel-header>
+            
+            <mat-panel-description>
+              Currently I am {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p><ol>
+            <li>Any player scoring a century will only get points for the century. No points will be awarded as their 30 run Bonus or Half-century Bonus. Additionally, no points are awarded for centuries in T10 matches. </li>
+            <li>If any runs are scored on an overthrow, points for those runs will be credited to the batter on strike for that ball. However, if the overthrow goes for a boundary, the batter will not receive extra Boundary Bonus points.</li>
+        </ol>
+        <br>
+        <br>
+    
+        
+    
+        <mat-card>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        
+        
+        
+            <ng-container matColumnDef="bawlingpointname">
+                <th mat-header-cell *matHeaderCellDef> <b> Bawling Points Name</b> </th>
+                <td mat-cell *matCellDef="let element"> {{element.bawlingpointname}} </td>
+            </ng-container>
+        
+        
+            <ng-container matColumnDef="bawlpoints">
+                <th mat-header-cell *matHeaderCellDef> <b>Points</b> </th>
+                <td mat-cell *matCellDef="let element"> {{element.bawlpoints}} </td>
+            </ng-container>
+        
+           
+        
+        
+        
+        has context menu
+        
+        
+        
+        
+        
+        
+        <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+        </table>
+        </mat-card>
+    
+    
+    
+    

@@ -1,0 +1,42 @@
+.m1{
+    text-align: center;
+   
+  }
+  .mt10{
+    height: 10px;
+  }
+
+  .centre-me{
+    display: block;
+    margin:0 auto;
+  }
+
+  /* .small-card{
+    width:200px;
+    height:150px;
+  } */
+
+
+  .centre-title{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mat-mdc-card {
+margin: auto;
+width: 500px;
+  }
+
+  .text-content{
+    display: flex;
+    gap: 1.5em;
+    justify-content: center;
+  }
+
+  .text-content h4{
+    margin: 0;
+  }
+
+  

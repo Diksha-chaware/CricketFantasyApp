@@ -1,0 +1,51 @@
+
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+
+                <div class="container text-centre">
+
+                
+                <br/>
+                        <h1 class="text-centre" style="color: rgb(54, 42, 165)  ;"><b>Login here:)</b></h1>
+
+                        <form (ngSubmit)="login()">
+                            
+
+                            
+
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Email </mat-label>
+                                <input [(ngModel)]="admin.email" name="email" matInput placeholder="email">
+
+
+
+                            </mat-form-field>
+                            <br />
+
+                            <mat-form-field class="full-width" appearance="fill">
+                                <mat-label>Password </mat-label>
+                                <input [(ngModel)]="admin.password" name="password" matInput placeholder="password">
+
+
+
+
+                            </mat-form-field>
+                            
+                            
+
+                            <div class="container text-centre">
+                                <button type="submit" mat-raised-button color="primary">Login</button>
+                            </div>
+                        </form>
+                    
+                
+            </div>
+
+        
+            </div>
+
+        </div>
+    </div>
+</div>

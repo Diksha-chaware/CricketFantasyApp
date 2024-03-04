@@ -1,0 +1,27 @@
+.centre-heading{
+    text-align: center;
+}
+
+.abc{
+    text-align: center;
+}
+
+.abcd{
+    text-align: center;
+}
+
+.match-screen{
+    min-height: 200vh;
+}
+.a{
+    text-align: center;
+}
+.mdc-button__label{
+    box-sizing: inherit;
+    text-align: center;
+}
+
+.xyz{
+    display: inline-flex;
+    text-align: center;
+}
